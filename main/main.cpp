@@ -1,9 +1,17 @@
-#include <stdio.h>
-#include "add.h"
+﻿#include "TreeString.h"
+#include <conio.h>
 
-int main() {
-  printf("hello!\n");
-  printf("%d\n", add(1, 2));
+using namespace std;
 
-  return 0;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	string str = "Ехал грека через реку, видит грека в реке рак, сунул грека руку в реку - рак за руку греку цап!";
+
+	Text tr(str);
+	cout << tr.getCount("грека") << endl;
+	_getch();
+	return 0;
 }
